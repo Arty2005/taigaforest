@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Русская тайга</title>
+    <link rel=stylesheet href=style.css>
+    <meta name="viewport" content="width=device-width"> 
+    <link rel="shortcut icon" href="./img/logo.ico" type="image/png">
+</head>
+<body>
+    <header id="hd" class="colour">
+        <img class="logo" src="./img/logo.jpg" alt="">
+        <h1>
+            ЗАПОВЕДНИКИ ТАЙГИ         
+        </h1>
+        <cite class="header_1">
+            Война и тайга - самая верная проверка человеку<br>
+            Виктор Астафьев
+        </cite>
+    </header>
+    <main>
+        <nav>
+           <button id="main_btn">Меню</button>
+            <ul id="main_menu" class="base_menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a>Заповедники(вы здесь)</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+            </ul>
+        </nav>
+        <section>
+            <h2>
+                
+            </h2>
+            <div class = "container">
+                <article class="card">
+                    <h3>
+                        ЗАПОВЕДНИК "СТОЛБЫ"
+                    </h3>
+                    <iframe width="450" height="285" src="https://www.youtube.com/embed/EmvP7OoKtu4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </article>
+                <article class="card">
+                    <h3>
+                        ЗАБАЙКАЛЬСКИЙ ЗАПОВЕДНИК
+                    </h3>
+                    <img src="./img/zapovednik_2.jpg" alt="">
+                    <p>Автор: Alphatetia - собственная работа, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=59324770</p>
+                </article>
+            </div>
+            <div class="container">
+                <article class="card">
+                    <h3>
+                        УССУРИЙСКИЙ ЗАПОВЕДНИК
+                    </h3>
+                    <img src="./img/zapovednik_3.jpg" alt="">
+                    <p>
+                        Автор: Хабаровчанин - собственная работа, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=17957695
+                    </p>
+                </article>
+                <article class="card">
+                    <h3>
+                        ПЕЧОРО-ИЛЫЧСКИЙ ЗАПОВЕДНИК
+                    </h3>
+                    <img src="./img/zapovednik_4.jpg" alt="">
+                    <p>
+                        
+                    </p>
+                </article>
+            </div>
+            <div class="container">
+                <article class="card">
+                    <h3>
+                        ЦЕНТРАЛЬНОСИБИРСКИЙ ЗАПОВЕДНИК
+                    </h3>
+                    <img src="./img/zapovednik_5.jpg" alt="">
+                    <p>
+                        
+                    </p>
+                </article>
+                <article class="card">
+                    <h3>
+                        ЗАПОВЕДНИК КИВАЧ
+                    </h3>
+                    <img src="./img/zapovednik_6.jpg" alt="">
+                    <p>
+                        
+                    </p>
+                </article>
+            </div>
+            <div class="container">
+                <article class="card">
+                    <h3>
+                        ПИНЕЖСКИЙ ЗАПОВЕДНИК
+                    </h3>
+                    <img src="./img/zapovednik_7.jpg" alt="">
+                    <p>
+                        
+                    </p>
+                </article>
+                <article class="card">
+                    <h3>
+                        ДАРВИНСКИЙ ЗАПОВЕДНИК
+                    </h3>
+                    <img src="./img/zapovednik_8.jpg" alt="">
+                    <p>
+                        
+                    </p>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+       <a class="back" href="#hd">ВВЕРХ</a>
+       <h3>Сайт сделан учеником Школы Программистов(https://informatics.ru) Артемом Нечавым(https://vk.com/artynech)</h3> 
+       <div>
+            <p>Информация на сайте взята из источников:</p>
+            <ul>
+                <li>картинки и видео: https://pixabay.com/</li>
+                <li>статьи: https://rus.stackexchange.com/, https://wikipedia.org/</li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        "use strict"
+        main_btn.addEventListener("click",fOpen)
+        function fOpen() {
+    main_menu.classList.toggle("menu_open")
+    }
+    </script>
+</body>
+</html>

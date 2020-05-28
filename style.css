@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+video {
+    width: 90%;
+}
+/* @keyframes anim {
+    from {
+        transform: rotate(0deg) ;
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+} */
+
+.logo {
+    width:50px;
+    height: 50px;
+    background-color: none;
+    animation: anim 1s;
+    /* background-color: aqua; */
+    animation-iteration-count: infinite;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:active {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+header {
+    /* margin-top: ; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.colour {
+    background: gold;
+    box-shadow: 0 -200px 100px -120px crimson inset;
+    animation: background 3s infinite alternate;
+    text-align: center;
+    
+  }
+  
+  @keyframes background {
+    50% {
+      background: skyblue;
+      box-shadow: 0 -200px 100px -100px yellowgreen inset;
+    }
+  }
+
+.base_menu{
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: calc(-40vw);
+    border: 2px solid #333;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+li {
+    list-style: none;
+}
+
+.menu_open {
+    left: 0;
+}
+
+main, header, footer {
+    width: calc(95vw - 10px);
+    margin: 0 auto;
+    border: 2px solid rgb(95, 95, 95);
+    border-radius: 5px;
+    margin-bottom: 5vh;
+    padding: 1vw;
+    background-color: rgba(255,255,255,0.4);
+}
+
+.card {
+    width: calc(90vw - 10px);
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin-bottom: 1vh;
+    background-color: #fff;
+    padding: 1vw;
+    text-align: center;
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+body {
+    margin: 0;
+    background-image: url(./img/pattern.jpg);
+    background-size: 200px;
+    background-position: center;
+    font-family: Roboto;
+}
+
+p {
+    font-size: 1rem;
+}
+
+@media (min-width:1024px) {
+    .container {
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: space-around;
+}
+    .card {
+        margin: 0 1vw;
+    }
+    main, header, footer {
+        width: 1024px;
+    }
+}
+
+
+
+.back {
+    background-color: rgb(255, 0, 0);
+    font-size: 20px;
+    position: fixed;
+    top: 96vh;
+    left: 85vw;
+    margin-bottom: 10px;
+}
+footer{
+    color: rgb(255, 255, 255);
+}
+
+/* Setup Tabs */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+.Gallery {
+    background:#000;
+    width:125px; /* Width of Tab Image */
+    float: left;
+    list-style: none;
+    border-right:8px solid black;
+}
+ 
+.Gallery #tab{
+    height:75px; /* Height of Tab Image */
+}
+ 
+/* Setup Tab so normal opacity is 40 and rollover is 100 */
+ul li a img{
+    /* for IE */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    filter:alpha(opacity=40);
+   
+    /* CSS3 standard */
+    opacity:0.4;
+   
+}
+ 
+/* Change Opacity to 100% on roll over */
+ul li a:hover img{
+       
+    /* for IE */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter:alpha(opacity=100);
+     
+    /* CSS3 standard */
+    opacity:1.0;
+}
+
+/* Places images to the right of the tabs,
+and hides non selected images */
+#images{
+    width:500px; 
+    height:300px; 
+    overflow:hidden;  /* Hides the non selected images */
+    float:left;
+}
+ 
+/* Places a black border around the entire viewer
+and centers it on the screen */
+#wrapper{
+    width:633px;
+    height:355px;
+    border:8px solid black;
+    margin:0px auto;
+}
+/*scrollmenu for slider*/
+.scrollmenu {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+    height: 375px;
+    }
+
+    .scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    
+    }
+
+    .scrollmenu a:hover {
+    background-color: #777;
+    }

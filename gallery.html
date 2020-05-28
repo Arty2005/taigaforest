@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>ГАЛЕРЕЯ</title>
+    <link rel=stylesheet href=style.css>
+    <meta name="viewport" content="width=device-width"> 
+    <link rel="shortcut icon" href="./img/logo.ico" type="image/png">
+</head>
+<body>
+    <header id="hd" class="colour">
+        <img class="logo" src="./img/logo.jpg" alt="">
+        <h1>
+           ГАЛЕРЕЯ ТАЕЖНЫХ ЛЕСОВ         
+        </h1>
+        <cite class="header_1">
+            Тайга гудит, встаёт она в полнеба,<br>
+            Живая вся, и вся из сказки - небыль...<br>
+            А. Балтин
+        </cite>
+    </header>
+    <main>
+        <nav>
+           <button id="main_btn">Меню</button>
+            <ul id="main_menu" class="base_menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="reserves.html">Заповедники</a></li>
+                <li><a>Галерея(вы здесь)</a></li>
+            </ul>
+        </nav>
+        <section>
+            <h2>
+                
+            </h2>
+            <div class = "container">
+                 <article class="card">
+                    <h3>
+                        
+                    </h3>
+                    <video controls loop>
+                        <source src="./assets/forests.mp4">
+                    </video>
+                </article>
+            </div>
+            <div class="container">
+                <article class="card">
+                <div id="wrapper">
+                    
+                    <ul class="Gallery scrollmenu">
+                        <li><a href="#image1" id="tab"><img src="./img/tab_1.jpg" alt="" title="" /></a></li>
+                        <li><a href="#image2" id="tab"><img src="./img/tab_2.jpg" alt="" title="" /></a></li>
+                        <li><a href="#image3" id="tab"><img src="./img/tab_4.jpg" alt="" title="" /></a></li>
+                        <li><a href="#image4" id="tab"><img src="./img/tab_5.jpg" alt="" title="" /></a></li>
+                    </ul>
+                     
+                    <div id="images">
+                        <div><a name="image1"></a><img src="" alt="" title="" /></div>
+                        <div><a name="image2"></a><img src="./img/gallery_1.jpg" alt="" title="" /></div>
+                        <div><a name="image3"></a><img src="./img/gallery_2.jpg" alt="" title="" /></div>
+                        <div><a name="image4"></a><img src="./img/gallery_4.jpg" alt="" title="" /></div>
+                        <div><a name="image5"></a><img src="./img/gallery_5.jpg" alt="" title="" /></div>
+                    </div>
+                </div>
+                </article>     
+    </main>
+    <footer>
+        <a class="back" href="#hd">ВВЕРХ</a>         
+        <h3>Сайт сделан учеником Школы Программистов(https://informatics.ru) Артемом Нечавым(https://vk.com/artynech)</h3> 
+        <div>
+            <p>Информация на сайте взята из источников:</p>
+            <ul>
+                <li>картинки и видео: https://pixabay.com/</li>
+                <li>статьи: https://rus.stackexchange.com/, https://wikipedia.org/</li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        "use strict"
+        main_btn.addEventListener("click",fOpen)
+        function fOpen() {
+    main_menu.classList.toggle("menu_open")
+    }
+    </script>
+</body>
+</html>
