@@ -203,7 +203,7 @@ and hides non selected images */
 and centers it on the screen */
 #wrapper{
     width:633px;
-    height:355px;
+    height:370px;
     border:8px solid black;
     margin:0px auto;
 }
