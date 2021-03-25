@@ -77,6 +77,8 @@ li {
 }
 
 .menu_open {
+    height: 10vh;
+    width: 30vw;
     left: 0;
 }
 
